@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-03-05T00:26:55.765-0300</date>
+  <logger>LUCAS DE QUEIROS SOUZA</logger>
+  <level>FINE</level>
+  <message>File 121210354-LUCAS DE QUEIROS SOUZA.zip was received. It was sent by LUCAS DE QUEIROS SOUZA from IP 192.168.0.11 at 05-03-2024 00*26*55</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-03-05T00:28:18.436-0300</date>
+  <logger>LUCAS DE QUEIROS SOUZA</logger>
+  <level>FINE</level>
+  <message>File 121210354-LUCAS DE QUEIROS SOUZA.zip was received. It was sent by LUCAS DE QUEIROS SOUZA from IP 192.168.0.11 at 05-03-2024 00*28*18</message>
+</record>
