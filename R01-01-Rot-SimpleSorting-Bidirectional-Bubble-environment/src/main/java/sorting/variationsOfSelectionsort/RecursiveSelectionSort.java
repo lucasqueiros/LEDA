@@ -15,8 +15,19 @@ public class RecursiveSelectionSort<T extends Comparable<T>> extends
 	 */
 	@Override
 	public void sort(T[] array, int leftIndex, int rightIndex) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not Implemented yet!");
-	}
+		if (leftIndex < 0 || rightIndex > array.length - 1 || leftIndex > rightIndex) return;
 
+		if (leftIndex < rightIndex) {
+			int indexMenor = leftIndex;
+
+			for (int j = leftIndex + 1; j <= rightIndex; j++) {
+				if (array[j].compareTo(array[menorIndex]) < 0) {
+					menorIndex = j;
+				}
+			}
+
+			Util.util.swap(array, menorIndex, leftIndex);
+			sort(array, leftIndex + 1, rightIndex);
+		}
+	}
 }
