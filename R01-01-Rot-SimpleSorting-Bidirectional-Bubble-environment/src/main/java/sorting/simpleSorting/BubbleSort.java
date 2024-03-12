@@ -23,6 +23,7 @@ public class BubbleSort<T extends Comparable<T>> extends AbstractSorting<T> {
 						trocou = true;
 					}
 				}
+				
 				if (!trocou) return;
 				rightIndex --;
 			}

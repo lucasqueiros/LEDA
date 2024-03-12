@@ -17,8 +17,36 @@ public class CountingSort extends AbstractSorting<Integer> {
 
 	@Override
 	public void sort(Integer[] array, int leftIndex, int rightIndex) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
+		
+		int maxValue = Integer.MIN_VALUE;
 
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] > maxValue) {
+				maxValue = array[i];
+			}
+		}
+		//instancia de C com tamanho = ao valor maximo, pois temos que ter uma posição para o 0;
+		int[] C = new int[maxValue];
+
+		//Contando a frequencia de array em C
+		//nesse caso cada valor v vai para C[v], nao subtraimos um devido a possivel ocorrencia do 0;
+		for (int i = 0; i < array.length; i++) {
+			C[array[i]] += 1;
+		}
+
+		//soma cumulativa
+		for(int i = 1; i < array.length; i++) {
+			C[i] += C[i - 1];
+		}
+
+		//instanciar B
+		int[] B = new int[array.length];
+
+		//colocar os valores de array de acordo com C em B
+		for(int i = 0; i < C.length; i++) {
+			B[C[array[i]]] = array[i];
+			C[i]--;
+		}
+
+	}
 }
