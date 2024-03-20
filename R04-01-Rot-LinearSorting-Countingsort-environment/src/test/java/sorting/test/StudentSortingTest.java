@@ -39,7 +39,6 @@ public class StudentSortingTest {
 	 */
 	private void getImplementation() {
 		
-		this.implementation = new CountingSort();
 		this.implementation = new ExtendedCountingSort();
 	}
 

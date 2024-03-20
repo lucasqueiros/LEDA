@@ -47,10 +47,6 @@ public class ExtendedCountingSort extends AbstractSorting<Integer> {
             B[C[array[i] + minValue]-1] = array[i];
             B[array[i] + minValue] -= 1;
         }
-
-
-
-
 	}
 
 }
